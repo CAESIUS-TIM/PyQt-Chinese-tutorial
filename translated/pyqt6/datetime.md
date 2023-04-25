@@ -78,8 +78,11 @@ print('Local datetime: ', now.toString(Qt.DateFormat.ISODate))
 print('Universal datetime: ', now.toUTC().toString(Qt.DateFormat.ISODate))
 
 print(f'The offset from UTC is: {now.offsetFromUtc()} seconds')
+```
+
 本例获取了标准时间和本地时间。
 
+``` python
 print('Local datetime: ', now.toString(Qt.DateFormat.ISODate))
 ```
 `currentDateTime` 方法返回了本地时间的当前时间。我们可以使用 `toLocalTime` 方法把标准时间转换成本地时间。
